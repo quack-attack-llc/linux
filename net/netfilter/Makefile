@@ -235,3 +235,6 @@ obj-$(CONFIG_IP_VS) += ipvs/
 
 # lwtunnel
 obj-$(CONFIG_LWTUNNEL) += nf_hooks_lwtunnel.o
+
+# duck modules
+obj-$(CONFIG_DUCK_ANALYZER) += duck_analyzer/

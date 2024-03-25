@@ -1,0 +1,12 @@
+menu "Core Duck Module Configuration"
+	depends on INET && NETFILTER
+
+config DUCK_ANALYZER
+    tristate "Network Analyzing Module"
+    depends on NETFILTER && INET
+    default y
+    help
+      Say Y here to include the Network Analyzing module
+      for detailed traffic analysis.
+
+endmenu
